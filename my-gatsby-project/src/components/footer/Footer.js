@@ -1,11 +1,10 @@
 import * as React from 'react'
-import whiteLogo from '../../assets/logo-white.svg'
 import { Link } from 'gatsby';
-import { Ondemand, Uptime, Security, Youtube, Twitter, Fb, In, Insta} from '../../acid/Footer_svg_logo'
 import { Container, Row, Col, Nav, } from 'react-bootstrap';
 import * as styles from './Footer.module.scss'
-import FooterStrings from "../../assets/string/Footer.strings"
+import FooterStrings from "./Footer.strings"
 import cx from 'classnames/bind'
+import whiteLogo from '../../assets/logo-white.svg'
 
 const Footer = () => (
 
@@ -18,21 +17,21 @@ const Footer = () => (
 
                         <Col md="auto">
                             <div className={styles.info}>
-                                <Ondemand />
+                                
                                 <span><b>{FooterStrings.TOP.DEMO_1}</b> & <b>{FooterStrings.TOP.DEMO_2}</b></span>
                             </div>
                         </Col>
 
                         <Col md="auto">
                             <div className={styles.info}>
-                                <Uptime />
+                                
                                 <span><b>{FooterStrings.TOP.UPTIME_1}</b>{FooterStrings.TOP.UPTIME_2}</span>
                             </div>
                         </Col>
 
                         <Col md="auto">
                             <div className={styles.info}>
-                                <Security />
+                                
                                 <span>{FooterStrings.TOP.SECURITY_1} <b>{FooterStrings.TOP.SECURITY_2}</b> </span>
                             </div>
                         </Col>
@@ -88,27 +87,27 @@ const Footer = () => (
                             <Nav className={styles.socialIcons} defaultActiveKey="/home" as="ul">
                                 <Nav.Item as="li">
                                     <Link to="/" className={styles.navLink}>
-                                        <Youtube class={styles.icon} />
+                                        
                                     </Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
                                     <Link to="/" className={styles.navLink}>
-                                        <Twitter class={styles.icon} />
+                                      
                                     </Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
                                     <Link to="/" className={styles.navLink}>
-                                        <Fb class={styles.icon} />
+                                       
                                     </Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
                                     <Link to="/" className={styles.navLink}>
-                                        <In class={styles.icon} />
+                                       
                                     </Link>
                                 </Nav.Item>
                                 <Nav.Item as="li">
                                     <Link to="/" className={styles.navLink}>
-                                        <Insta class={styles.icon} />
+                                      
                                     </Link>
                                 </Nav.Item>
                             </Nav>

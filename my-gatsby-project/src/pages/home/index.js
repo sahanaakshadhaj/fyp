@@ -3,13 +3,11 @@ import Layout from "/src/components/layout.js"
 import Seo from "../../components/seo"
 import { Container, Row, Col, Nav, Card } from "react-bootstrap"
 
-import { Docs } from "../../acid/Help_svg_logo"
+
 import cx from "classnames/bind"
 import { Btnwhite } from "../../components/button/Button"
 
-import helpStrings from "../../assets/string/help.strings"
-
-import * as styles from "./help.module.scss"
+import * as styles from "./home.module.scss"
 
 const Home = () => {
   return (
@@ -18,13 +16,13 @@ const Home = () => {
       <Layout>
         <div className={styles.pageBanner}>
           <Container data-aos="fade-down">
-            <span>{helpStrings.BANNER.SPAN}</span>
+            <span>HELP</span>
             <h1>
-              {helpStrings.BANNER.H1_1}
+            We're here to answer your queries,
               <br />
-              {helpStrings.BANNER.H1_2}
+              any hour of the day.
             </h1>
-            <p>{helpStrings.BANNER.P}</p>
+            <p>Workhall has the highest rated client support in the industry. We are here to answer your questions 24 hours a day and every day of the week - including holidays!</p>
           </Container>
         </div>
 
@@ -38,16 +36,16 @@ const Home = () => {
               <Card className={styles.card}>
                 <Row className={styles.cardrow}>
                   <Col lg="1" md="1" sm="12" className={cx(styles.svg, "mb-3")}>
-                    <Docs />
+                    
                   </Col>
                   <Col lg="8" md="8" sm="12" className={cx(styles.body)}>
-                    <h3>{helpStrings.CARD.TITLE}</h3>
-                    <p>{helpStrings.CARD.CONTENT}</p>
+                    <h3>Support Articles</h3>
+                    <p>Figure out how you can build, customise, and use features in Workhall to get your work done.</p>
                   </Col>
                   <Col lg="3" md="3" sm="12" className={styles.buttoncol}>
                     <a href="/user_guide_page/guide" target="_blank">
                       <Btnwhite
-                        btntext={helpStrings.CARD.BUTTON}
+                        btntext="CLICK MORE"
                         class={cx(styles.btnWhite)}
                       />
                     </a>
@@ -61,8 +59,8 @@ const Home = () => {
         <Container>
           <div className={styles.faq}>
             <div className={styles.secTitle} data-aos="fade-up">
-              <span>{helpStrings.QA.SPAN}</span>
-              <h1 className={styles.darkColor}>{helpStrings.QA.H1}</h1>
+              <span>FAQ</span>
+              <h1 className={styles.darkColor}>Questions & Answers</h1>
             </div>
 
             <div>
@@ -76,35 +74,35 @@ const Home = () => {
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques1"
                         >
-                          {helpStrings.QA.COL1_Q1}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques3"
                         >
-                          {helpStrings.QA.COL1_Q2}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques5"
                         >
-                          {helpStrings.QA.COL1_Q3}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques7"
                         >
-                          {helpStrings.QA.COL1_Q4}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques9"
                         >
-                          {helpStrings.QA.COL1_Q5}
+                          What can I do with Workhall?
                         </Nav.Link>
                       </Nav>
                     </Col>
@@ -116,28 +114,28 @@ const Home = () => {
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques2"
                         >
-                          {helpStrings.QA.COL2_Q1}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques4"
                         >
-                          {helpStrings.QA.COL2_Q2}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques6"
                         >
-                          {helpStrings.QA.COL2_Q3}
+                          What can I do with Workhall?
                         </Nav.Link>
                         <Nav.Link
                           className={styles.navLink}
                           target="_blank"
                           href="/user_guide_page/faq_page/faq#ques8"
                         >
-                          {helpStrings.QA.COL2_Q4}
+                          What can I do with Workhall?
                         </Nav.Link>
                       </Nav>
                     </Col>

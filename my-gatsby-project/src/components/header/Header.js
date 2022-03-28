@@ -3,12 +3,9 @@ import { Link } from "gatsby"
 import { useScrollRestoration } from "gatsby"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
+import headerStrings from "./Header.string"
 import whiteLogo from "../../assets/logo-white.svg"
 import blackLogo from "../../assets/logo-black.svg"
-// import hamblue from '../../assets/ham_blue.svg'
-// import hamwhite from '../../assets/ham_white.svg'
-import headerStrings from "../../assets/string/Header.string"
-
 const Header = () => {
   const ulScrollRestoration = useScrollRestoration(`page-component-ul-list`)
 
